@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Book Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- ====================  Header ==================== -->
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logoContainer">
+                <a href="index.html">
+                    <img src="./assets/images/Logo.svg" alt="logo" class="logo" />
+                </a>
+            </div>
+            <ul class="navLinks">
+                <li class="navLink"><a href="index.html">Home</a></li>
+                <li class="navLink"><a href="">News</a></li>
+                <li class="navLink"><a href="">Promotion of the mount</a></li>
+                <li class="navLink"><a href="">Plublishs</a></li>
+                <li class="navLink"><a href="">Subscribe to the newsletter</a></li>
+            </ul> 
+            <div class="navActoins">
+                <button class="modeSwitchBtn"></button>
+                <button class="menuBtn">
+                    <img src="./assets/images/Menu.svg" alt="menu" />
+                </button>
+            </div>
+            </div>
+        </nav>
+        <div class="sideBar">
+            <div>
+                <button class="closeBtn">
+                <img src="./assets/images/close.svg" />
+                </button>
+            <ul class="navLinks">
+                <li class="navLink"><a href="index.html">Home</a></li>
+                <li class="navLink"><a href="">News</a></li>
+                <li class="navLink"><a href="">Promotion of the mount</a></li>
+                <li class="navLink"><a href="">Plublishs</a></li>
+                <li class="navLink"><a href="">Subscribe to the newsletter</a></li>
+            </ul>
+            <div class="sideBarActiions">
+                <button class="modeSwitchBtn">
+                    <p></p>
+                <span class="switch"><span class="switchIcn"></span></span>
+                </button>
+            </div>
+            </div>
+        </div>
+    </header>
+    <!-- ====================  Book Details Section ==================== -->
+    <section class="book-details">
+        <div class="container">
+                <img id="book-image" src="" alt="Book Cover" class="book-cover">
+                <div class="book-info">
+                    <h1 id="book-title"></h1>
+                    <h3 id="book-author"></h3>
+                    <h2 id="About">About Book :</h2>
+                    <p id="book-description"></p>
+                    <div class="Request">
+                        <div class="AddOrMin">-</div>
+                        <p>1</p>
+                        <div class="AddOrMin">+</div>
+                    </div>
+                    <div id="Actions-btns">
+                        <button class="primary-btn action-btn btn">Add to cart</button>
+                        <button class="btn action-btn Favorite">Favorite</button>
+                    </div>
+                    
+                    <div class="book-information">
+                        <p>Pages Number : <span id="book-pages"></span></p>
+                        <p>Rating Count : <span id="book-rating"></span></p>
+                        <p>Reviews: <span id="book-reviews"></span></p>
+                    </div>
+                    
+                </div>
+            </div>
+    </section>
+    <footer>
+        <p>© All copyrights are reserved. B-World 2022. </p>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
