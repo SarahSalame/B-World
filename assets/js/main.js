@@ -28,10 +28,11 @@ window.onresize = () => {
 body.setAttribute("data-theme", dataTheme ?? "light");
 localStorage.setItem("themeMode", body.getAttribute("data-theme"));
 
-logo.src =
-  dataTheme === "dark"
-    ? "./assets/images/dark-Logo.svg"
-    : "./assets/images/Logo.svg";
+const repoPath = window.location.pathname.includes("/repo-name") ? "/repo-name" : "";
+logo.src = dataTheme === "dark"
+  ? `${repoPath}/assets/images/dark-Logo.svg`
+  : `${repoPath}/assets/images/Logo.svg`;
+
 
 modeSwitchBtn[0].innerHTML =
   dataTheme === "dark"
