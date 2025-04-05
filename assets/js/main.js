@@ -132,10 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.getElementById("book-reviews").textContent = book.review_count ;
             })
             .catch(error => console.error("حدث خطأ أثناء جلب تفاصيل الكتاب:", error));
-    } else {
-        alert("لم يتم العثور على كتاب!");
-        window.location.href = "index.html"; 
-    }
+    } 
 });
 
 
