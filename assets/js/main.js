@@ -29,9 +29,10 @@ body.setAttribute("data-theme", dataTheme ?? "light");
 localStorage.setItem("themeMode", body.getAttribute("data-theme"));
 
 const repoPath = window.location.pathname.includes("/repo-name") ? "/repo-name" : "";
+
 logo.src = dataTheme === "dark"
-  ? `${repoPath}/assets/images/dark-Logo.svg`
-  : `${repoPath}/assets/images/Logo.svg`;
+  ? `https://raw.githubusercontent.com/SarahSalame/B-World/refs/heads/main/assets/images/dark-Logo.svg`
+  : `https://raw.githubusercontent.com/SarahSalame/B-World/refs/heads/main/assets/images/logo.svg`;
 
 
 modeSwitchBtn[0].innerHTML =
@@ -55,9 +56,10 @@ modeSwitchBtn.forEach((mode) => {
     body.setAttribute("data-theme", newTheme);
 
     logo.src =
-      newTheme === "dark"
-        ? "/B-World/assets/images/dark-Logo.svg"
-  : "/B-World/assets/images/Logo.svg";
+    newTheme === "dark"
+      ? "https://raw.githubusercontent.com/SarahSalame/B-World/refs/heads/main/assets/images/dark-Logo.svg"
+      : "https://raw.githubusercontent.com/SarahSalame/B-World/refs/heads/main/assets/images/logo.svg";
+  
 
     modeSwitchBtn[0].innerHTML =
       newTheme === "dark"
