@@ -459,6 +459,12 @@ footer {
           max-width: 100%;
         }
       }
+      .hero-img {
+
+        img {
+          width: 60%;
+        }
+      }
     }
     #Selected{
     margin-top: 438px;
